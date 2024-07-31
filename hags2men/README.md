@@ -2,7 +2,7 @@
 
 Little static random link generator site written for July 2024 issue of Just2Hags. I gave it a very stupid name.
 
-[hags2men - roll the dice!](hags2men.yay.boo)
+[hags2men - roll the dice!](http://hags2men.yay.boo)
 
 I made this by creating the page on a branch of my personal site repo, using flask and jinja, then making it static using flask-freeze. There's also
 some javascript included.
