@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://bluebottles.bearblog.dev/the-long-goodbye/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+<title>🎞️ The Long Goodbye | 🌠Bluebottles Blog</title>
+
+<link rel="shortcut icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20viewBox=&#39;0%200%20100%20100&#39;%3E%3Ctext%20y=&#39;.9em&#39;%20font-size=&#39;90&#39;%3E%F0%9F%90%81%3C/text%3E%3C/svg%3E">
+<style>
+      
+      
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@400;700&display=swap');
+
+/* Settings */
+:root {
+  --color-dark: #028900;
+  --color-light: #FAF9F6;
+  --color-primary: #adff00;
+  --spacing: 1.5rem;
+  --font-stack: "Solway", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --max-width: 1200px;
+}
+
+/* Dark mode settings */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-dark: #fafafa;
+    --color-light: #1a1a1a;
+  }
+}
+
+/* Basic styles */
+body {
+  background: var(--color-light);
+  color: var(--color-dark);
+  padding: 5vw;
+  font-family: var(--font-stack);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--spacing) * 2);
+  min-height: 100vh;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header,
+main,
+footer {
+  max-width: 60ch;
+  margin-inline: auto;
+  width: 100%;
+}
+
+/* Header styles */
+header {
+  padding-bottom: var(--spacing);
+  flex-basis: 12rem;
+  flex-grow: 1;
+}
+
+/* Main content styles */
+main {
+  flex-basis: 0;
+  flex-grow: 999;
+  padding-bottom: calc(var(--spacing) * 2);
+  flex-basis: 40rem;
+}
+
+u {
+  color: currentColor;
+  text-decoration-color: var(--color-light);
+  text-decoration: wavy underline;
+  text-underline-offset: 0.3ex;
+}
+
+
+/* Footer styles */
+footer {
+  min-width: 100%;
+  flex-basis: 0;
+  flex-grow: 1;
+  padding-top: var(--spacing);
+}
+
+/* Link styles */
+a {
+  color: currentColor;
+  text-decoration-color: var(--color-primary);
+  text-decoration-thickness: 0.2ex;
+  text-underline-offset: 0.3ex;
+}
+
+a:hover {
+  text-decoration: wavy underline;
+  text-decoration-color: var(--color-primary);
+  text-underline-offset: 0.3ex;
+}
+
+/* Image styles */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Heading styles */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+  line-height: 1.3;
+  text-wrap: balance;
+}
+
+/* Adjustments for different heading levels */
+h1 {
+  font-size: 3.55rem;
+}
+h2 {
+  font-size: 2.66rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.13rem;
+}
+
+/* List styles */
+ul,
+ol {
+  padding-inline-start: var(--spacing);
+}
+li {
+  margin-block-start: var(--spacing);
+}
+
+/* Blockquote styles */
+blockquote {
+  padding-inline-start: var(--spacing);
+  border-inline-start: 0.3em solid;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+/* Flow and rhythm */
+:is(h1, h2, h3, h4, h5, blockquote) {
+  margin-block-end: calc(var(--spacing) / 2);
+}
+:is(h1, h2, h3, h4, h5) + * {
+  margin-block-start: calc(var(--spacing) / 3);
+}
+:is(h1, h2, h3, h4, h5) + :where(h2, h3, h4, h5) {
+  margin-block-start: calc(var(--spacing) * 2);
+}
+
+/* Line lengths */
+blockquote {
+  max-width: 50ch;
+}
+h1 {
+  max-width: 24ch;
+}
+h2,
+h3 {
+  max-width: 32ch;
+}
+
+/* Bear Content */
+.title {
+  text-decoration: none;
+}
+.title h1 {
+  font-size: 2rem;
+  margin-top: calc(var(--spacing) / 2);
+}
+nav {
+  position: sticky;
+  top: var(--spacing);
+}
+nav p {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--spacing);
+  row-gap: 0;
+}
+
+@media screen and (min-width: 1000px) {
+  nav p {
+    flex-direction: column;
+  }
+}
+
+ul.blog-posts {
+  list-style-type: none;
+  padding: unset;
+}
+ul.blog-posts li {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 600px) {
+  ul.blog-posts li {
+    flex-direction: row;
+    gap: calc(var(--spacing) / 2);
+  }
+}
+ul.blog-posts li span {
+  min-width: 11ch;
+}
+time {
+  opacity: 0.5;
+  font-style: normal;
+}
+.highlight,
+.code {
+  padding: 1px var(--spacing);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  overflow-x: auto;
+  line-height: 1.2;
+}
+table {
+  width: 100%;
+}
+th {
+  text-align: left;
+}
+
+hr {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+.upvote-button {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: inherit;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.upvote-button.upvoted {
+    color: salmon;
+}
+.upvote-count {
+    margin-top: -3px;
+}
+
+      
+  </style>
+<style>
+    body:hover {
+        border-image: url("/hit/MbJbCBsjgdgWXJyWEMIp/?ref=https://just2hags.substack.com/");
+        border-width: 0;
+    }
+</style>
+</head>
+<body class="post ">
+<header>
+</header>
+<main>
+<h1>
+🎞️ The Long Goodbye
+</h1>
+<p>
+<i>
+<time datetime="2024-07-29T11:44Z">
+29 Jul, 2024
+</time>
+</i>
+</p>
+<p>I rewatched The Long Goodbye recently - it's in my letterboxed top 4 - and I still love it.</p>
+<p><img src="./bluebottles-1722253323.jpg" alt="the-long-goodbye_758_426_81_s_c1"></p>
+<p>Altman's style with his busy scenes and overlapping dialog is very enjoyable for me. I also saw John Sayles' <a href="https://slate.com/culture/2024/01/lone-star-matthew-mcconaughey-movie-criterion-collection-john-sayles.html">Lone Star</a> (I watched both of these as part of the <a href="https://www.watershed.co.uk/cinema-rediscovered-2024">Cinema Rediscovered</a> festival) which was compared to Altman's films in Sayles' use of overlapping narratives and large casts, all who feel like they have their own lives and stories. But Sayles's film felt cinematic, whereas Altman feels rougher, almost like real life.</p>
+<p>The <a href="https://sadhillmedia.com/filmformally/2020/5/3/episode-5-robert-altman-and-zoom-lenses">"Altman zoom"</a> - where his camera zooms in and lingers on a aspect of a scene - lingers on things I feel like my eye would linger on if I was there. Cats, people in the background, a dog dancing through the waves while a man commits suicide by walking into the sea.</p>
+<p>Elliot Gould as Marlowe really is "the coolest loser ever portrayed on screen". This watch it really stood out to me how disconnected he is - there's no romance with the femme fatale or any interactions outside of the case. Except with his cat at the start of the film, in one of my favourite opening sequences ever. The loss of the cat and the start of the mystery really seem symbolic of Marlowe becoming unmoored.</p>
+<p>But it doesn't seem to bother him too much - as he says repeatedly throughout the film, while lighting matches on every available surface, - "It's ok with me".</p>
+<p>(You can see the <a href="https://youtu.be/_u0uo0TxS-I">opening sequence here on youtube</a>, which also features Marlowe's apartment which I would kill to live in).</p>
+
+</body></html>
