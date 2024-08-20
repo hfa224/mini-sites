@@ -2,7 +2,7 @@
 
 Little static site to host the answers for my madeira xw clues
 
-[Madeira clues](madeiraxw.yay.boo)
+[Madeira clues](http://madeiraxw.yay.boo)
 
 I made this by editing the hags2men mini site.
 
