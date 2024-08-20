@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Madeira clues</title>
+	<link rel="stylesheet" href="https://unpkg.com/normalize.css">
+	<link rel="stylesheet" href="https://unpkg.com/magick.css">
+	<!-- add custom styling additions -->
+	<link rel="stylesheet" href="./crossword.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript">
+		var imageURLs = [
+			 "./airport_chicken.webp"
+		   , "./flamingo.webp"
+		   , "./helen_new_bf.webp"
+		   , "./michael_death_poncha.webp"
+		   , "./michael_heart_nikita.webp"
+		   , "./michael_jump.webp"
+		   , "./nikita.webp"
+		   , "./poncha.webp"
+		   , "./solero.webp"
+		];
+		function getImageTag() {
+		  var img = '<img class="image-container" style="width:100px" src=\"';
+		  var randomIndex = Math.floor(Math.random() * imageURLs.length);
+		  img += imageURLs[randomIndex];
+		  img += '\" alt=\"Some alt text\"/>';
+		  return img;
+		}
+	  </script>
+</head>
+
+<body>
+	<!-- Page content -->
+	<main>
+		<header style="margin-bottom:0rem;margin-top:4rem">
+		</header>
+		<section class="highlight" style="min-height: 130px;">
+					<script type="text/javascript">
+						document.write(getImageTag());
+					</script>
+				<div class="text-container" id="description"><p>Below is a collection of Madeira themed crossword clues.
+					All the words here are in my <a href="https://docs.google.com/presentation/d/1bogLXGWbfAlZBPncKkkuQsSzIpUV7a10u4ron5kzGx8/edit?usp=sharing">holiday slideshow</a>.</p>
+				<p>Are you lost? <a href="https://www.wordplays.com/help/cryptic-crossword-tutorial/">What the hell is a cryptic crossword anyway??</a></p>
+				</div>
+
+		</section>
+		<section class="highlight">
+			<div style="width:100%">Chap on exciting regional drinks (6)</div>
+			
+			<p style="width:100%"><details>
+				<summary><small>Give me a hint!</small></summary>
+				<p>This is an anagram...</p>
+				<details>
+					<summary><small>I give up, tell me the answer</small></summary>
+					<p>PONCHA; definition: regional drinks</p>
+					<p>anagram ”exciting” of (chap on)*</p>
+				</details>
+			</details><p>
+		</section>
+
+		<section class="highlight">
+			<div style="width:100%">Fine, short uncle holding in laugh in Madeira (7)</div>
+			
+			<p style="width:100%"><details>
+				<summary><small>Give me a hint!</small></summary>
+				<p>The answer is a place "in Madeira" and begins with F.</p>
+				<details>
+					<summary><small>I give up, tell me the answer</small></summary>
+					<p>FUNCHAL; definition: in Madeira</p>
+					<p>F (Fine, abbrev) + "uncl" (short uncle) around (holding) laugh="ha"</p>
+				</details>
+			</details><p>
+		</section>
+		
+		<section class="highlight">
+			<div style="width:100%">Short, backwards low-carb diet one is stuck in - but it mixes ice cream and beer?! (7)</div>
+			
+			<p style="width:100%"><details>
+				<summary><small>Give me a hint!</small></summary>
+				<p>This is a drink that mixes ice cream and beer... What is the most famous low carb diet?</p>
+				<details>
+					<summary><small>I give up, tell me the answer</small></summary>
+					<p>NIKITA; definition: mixes ice cream and beer</p>
+					<p>ATKINS="low carb diet" made short "ATKIN" and reversed ("backwards") NIKTA with i ("one is stuck in") = NIKITA</p>
+				</details>
+			</details><p>
+		</section>
+
+
+		<section class="highlight">
+			<details>
+				<summary><small>How did I make this site?</small></summary>
+				<p>I based the styling on <a href="https://css.winterveil.net/">magick.css</a> and <a
+						href="https://moku.blog/">moku.blog</a> (a lot cuter than this).</p>
+				<p>I used some javascript from <a href="https://stackoverflow.com/questions/2777479/display-random-image-when-page-loads-without-utilizing-onload-in-the-body-tag">stackoverflow</a> to make the image change when you refresh (try it!).
+				</p>
+				<p>I then uploaded as a bunch of html, css, and
+					image files to <a href="yay.boo">yay.boo</a> and made some minor tweaks (updating file paths)
+					to make it work. And that's it.</p>
+			</details>
+		</section>
+
+
+		<footer>
+			<hr>
+		</footer>
+	</main>
+</body>
+
+</html>
